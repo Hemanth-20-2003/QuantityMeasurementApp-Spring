@@ -1,7 +1,5 @@
 package com.app.quantitymeasurement.model;
 
-import com.app.quantitymeasurement.unit.IMeasurable;
-import com.app.quantitymeasurement.unit.LengthUnit;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -10,6 +8,11 @@ import java.time.LocalDateTime;
 
 
 
+/**
+ * JPA Entity representing a quantity measurement operation record.
+ * Stores details of all quantity operations (add, subtract, multiply, divide, compare, convert)
+ * with input values, units, and results for auditing and history purposes.
+ */
 @Entity // Marks this class as a JPA entity
 @Table(name = "quantity_measurement_entity", indexes = {
     @Index(name = "idx_operation", columnList = "operation"),
