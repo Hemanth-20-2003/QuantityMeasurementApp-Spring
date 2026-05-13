@@ -109,6 +109,10 @@ public class QuantityMeasurementController {
 	public List<QuantityMeasurementEntity> his(){
 		return service.history();
 	}
+	@GetMapping("success")
+	public String success(){
+		return "success";
+	}
 	
 	/**
 	 * Endpoint to retrieve operation history filtered by operation type.
