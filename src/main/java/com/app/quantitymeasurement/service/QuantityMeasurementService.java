@@ -284,15 +284,7 @@ public class QuantityMeasurementService {
 		return repository.findAll();
 	}
 	
-	/**
-	 * Retrieve operation history filtered by operation type.
-	 * 
-	 * @param op the Operation type to filter by
-	 * @return List of QuantityMeasurementEntity records for the specified operation
-	 */
-	public java.util.List<QuantityMeasurementEntity> getbyOperation(Operation op){
-		return repository.findByOperation(op);
-	}
+	
 	
 	public List<QuantityMeasurementEntity> getbyOperation(Operation op){
 		return repository.findByOperation(op);
