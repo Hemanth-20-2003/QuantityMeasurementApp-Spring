@@ -85,9 +85,7 @@ public class QuantityMeasurementEntity {
     @Column(name = "updated_at")
     private LocalDateTime updatedAt;
 
-    public QuantityMeasurementEntity() {
-    	
-    }
+   
     
     
 }
