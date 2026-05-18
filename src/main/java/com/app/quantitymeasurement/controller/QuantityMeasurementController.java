@@ -115,7 +115,7 @@ public class QuantityMeasurementController {
 	}
 
 	@GetMapping("failure")
-	public String success(){
+	public String failure(){
 		return "success";
 	}
 	
