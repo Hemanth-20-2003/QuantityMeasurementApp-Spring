@@ -113,6 +113,11 @@ public class QuantityMeasurementController {
 	public String success(){
 		return "success";
 	}
+
+	@GetMapping("failure")
+	public String success(){
+		return "success";
+	}
 	
 	/**
 	 * Endpoint to retrieve operation history filtered by operation type.
